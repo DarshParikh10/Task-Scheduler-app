@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Scheduler App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Task Scheduler</h1>
+  </header>
+  <main>
+    <section id="task-form">
+      <h2>Add a Task</h2>
+      <form id="new-task-form">
+        <input type="text" id="task-title" placeholder="Task Title" required />
+        <textarea id="task-desc" placeholder="Task Description"></textarea>
+        <input type="date" id="task-deadline" required />
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+    <section id="task-list">
+      <h2>Scheduled Tasks</h2>
+      <ul id="tasks"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Task Scheduler App</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
